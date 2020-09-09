@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="refresh" content="5">
+		<style>
+			body {
+				font-family: calibri;
+			}
+			th, td {
+				border: 1px solid black;
+				text-Align: center;
+			}
+			th {
+				font-size: 20px;
+				font-style: underline;
+			}
+		</style>
+		<script>
+			var now = new Date();
+			var day = now.getDay();
+			var hours = now.getHours();
+			var minutes = now.getMinutes();
+			var time = hours * 100 + minutes;			
+			if (day == 0) {
+				document.write ('<body style="background-color: orange">');
+				document.write ('Today is ');
+				document.write ('Vacant!!! ');
+			}
+			else if (day == 1) {
+				document.write ('<style>#monday {background-color:orange;} </style>');	
+				document.write ('Today is ');
+				if (time > 1030 && time < 1130){
+					document.write ('<style>#monday1 {background-color:skyblue;} </style>');	
+				}
+				else if (time > 1500 && time < 1600){
+					document.write ('<style>#monday2 {background-color:skyblue;} </style>');	
+				}
+				else if (time > 1600 && time < 1700){
+					document.write ('<style>#monday3 {background-color:skyblue;} </style>');	
+				}
+				else {
+					document.write ('Vacant!!! ');	
+				}
+			}
+			else if (day == 2) {
+				document.write ('<style>#teusday {background-color:orange;} </style>');
+				document.write ('Today is ');
+				if (time > 0730 && time < 0830){
+					document.write ('<style>#teusday1 {background-color:skyblue;} </style>');	
+				}
+				else if (time > 0900 && time < 1030){
+					document.write ('<style>#teusday2 {background-color:skyblue;} </style>');	
+				}
+				else if (time > 1030 && time < 1200){
+					document.write ('<style>#teusday3 {background-color:skyblue;} </style>');	
+				}
+				else if (time > 1500 && time < 1800){
+					document.write ('<style>#teusday4 {background-color:skyblue;} </style>');	
+				}
+				else {
+					document.write ('Vacant!!! ');	
+				}
+			}
+			else if (day == 3) {
+				document.write ('<style>#wednesday {background-color:orange;} </style>');
+				document.write ('Today is ');
+				if (time > 0730 && time < 0830){
+					document.write ('<style>#wednesday1 {background-color:skyblue;} </style>');	
+				}
+				else if (time > 1030 && time < 1130){
+					document.write ('<style>#wednesday2 {background-color:skyblue;} </style>');	
+				}
+				else if (time > 1500 && time < 1600){
+					document.write ('<style>#wednesday3 {background-color:skyblue;} </style>');	
+				}
+				else if (time > 1600 && time < 1700){
+					document.write ('<style>#wednesday4 {background-color:skyblue;} </style>');	
+				}
+				else {
+					document.write ('Vacant!!! ');	
+				}			
+			}
+			else if (day == 4) {
+				document.write ('<style>#thursday {background-color:orange;} </style>');
+				document.write ('Today is ');
+				if (time > 0730 && time < 0830){
+					document.write ('<style>#thursday1 {background-color:skyblue;} </style>');	
+				}
+				else if (time > 0900 && time < 1030){
+					document.write ('<style>#thursday2 {background-color:skyblue;} </style>');	
+				}
+				else if (time > 1030 && time < 1200){
+					document.write ('<style>#thursday3 {background-color:skyblue;} </style>');	
+				}
+				else if (time > 1600 && time < 1700){
+					document.write ('<style>#thursday4 {background-color:skyblue;} </style>');	
+				}
+				else {
+					document.write ('Vacant!!! ');	
+				}
+			}
+			else if (day == 5) {
+				document.write ('<style>#friday {background-color:orange;} </style>');
+				document.write ('Today is ');
+				if (time > 0730 && time < 1130){
+					document.write ('<style>#friday1 {background-color:skyblue;} </style>');	
+				}
+				else if (time > 1600 && time < 1700){
+					document.write ('<style>#friday2 {background-color:skyblue;} </style>');	
+				}
+				else {
+					document.write ('Vacant!!! ');	
+				}
+			}
+			else if (day == 6) {
+				document.write ('<style>#saturday {background-color:orange;} </style>');
+				document.write ('Today is ');
+				if (time > 0730 && time < 1700){
+					document.write ('<style>#saturday1 {background-color:skyblue;} </style>');	
+				}
+				else {
+					document.write ('Vacant!!! ');	
+				}
+			}
+			else {
+			document.write ('<body style="background-color: white;">');
+			}
+			document.write (now);
+		</script>
+	</head>
+	<body background="banner.jpg">
+	<h1>BSIT 1B - WMAD Schedule</h1>
+		<table style="width:100%">
+		  <tr>
+			<th id="monday">MONDAY</th>
+			<th id="teusday">TEUSDAY</th>
+			<th id="wednesday">WEDNESDAY</th>
+			<th id="thursday">THURSDAY</th>
+			<th id="friday">FRIDAY</th>
+			<th id="saturday">SATURDAY</th>
+		  </tr>
+		  <tr>
+			<td id="monday1"><b>IT ECC 1</b><br>10:30-11:30</td>
+			<td id="teusday1"><b>PATHF 1</b><br>07:30-08:30</td>
+			<td id="wednesday1"><b>IT ECC 2-A</b><br>07:30-08:30</td>
+			<td id="thursday1"><b>PATH F1</b><br>07:30-08:30</td>
+			<td id="friday1"><b>IT ECC 2-A</b><br>07:30-11:30</td>
+			<td id="saturday1"><b>NSTP</b></td>
+		  </tr>
+		  <tr>
+			<td id="monday2"><b>GE ENVI</b><br>15:00-16:00</td>
+			<td id="teusday2"><b>GE SELF</b><br>09:00-10:30</td>
+			<td id="wednesday2"><b>IT ECC 1</b><br>10:30-11:30</td>
+			<td id="thursday2"><b>GE SELF</b><br>09:00-10:30</td>
+			<td id="friday2"><b>GE MATH</b><br>16:00-17:00</td>
+			<td id="saturday1"><b>NSTP</b></td>
+		  </tr>
+		  <tr>
+			<td id="monday3"><b>GE MATH</b><br>16:00-17:00</td>
+			<td id="teusday3"><b>GE ARTS</b><br>10:30-12:00</td>
+			<td id="wednesday3"><b>GE ENVI</b><br>15:00-16:00</td>
+			<td id="thursday3"><b>GE ARTS</b><br>10:30-12:00</td>
+			<td> </td>
+			<td id="saturday1"><b>NSTP</b></td>
+		  </tr>
+		  <tr>
+			<td> </td>
+			<td id="teusday4"><b>IT ECC 1</b><br>15:00-18:00</td>
+			<td id="wednesday4"><b>GE MATH</b><br>16:00-17:00</td>
+			<td id="thursday4"><b>GE ENVI</b><br>16:00-17:00</td>
+			<td> </td>
+			<td id="saturday1"><b>NSTP</b></td>
+		  </tr>
+		</table>
+		<script>
+			char noClass = "A";
+			document.write (noClass);
+		</script>
+	</body>
+</html>
